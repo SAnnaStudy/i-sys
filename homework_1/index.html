@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="icon">
+            <img src="img/logo(3).svg" alt="logo">
+        </div>
+        <div class="menu">
+            <ul>
+                <li>PRODUCTS</li>
+                <li>GALLERY</li>
+                <li>CONTACTS</li>
+            </ul>
+        </div>
+        <div class="buttons">
+            <button>LOG IN</button>
+            <button class="sign_button">SIGN UP</button>
+        </div>
+    </div>
+    <div class="slider">
+        <div class="slider_text">
+            <h1>LET'S RIDE <br><b>THE FUTURE</b></h1>
+            <div class="slider_text_p">
+                <hr>
+                <p>Simple and sleek design with users in mind.</p>
+            </div>
+            <div class="slider_text_buttons">
+                <div class="slider_text_buttons_div">
+                    <button>→</button>
+                    <p>Buy now</p>
+                </div>
+                <div class="slider_text_buttons_text">
+                    <p>Watch our <br>video how <br>it works</p>
+                    <a><img class="slider_buttons_text_pic" src="img/play_button.png" alt="player"></a>
+                </div>
+            </div>
+        </div>
+        <img class="slider_pic" src="img/bg.png" alt="image">
+    </div>
+    <div class="features">
+        <div class="features_block">
+            <div class="features_block_inner">
+                <p>105</p>
+                <p>lbs</p>
+            </div>
+            <div>Net Weight</div>
+        </div>
+        <div class="features_block">
+            <div class="features_block_inner">
+                <p>26</p>
+                <p>mph</p>
+            </div>
+            <div>Top Speed</div>
+        </div>
+        <div class="features_block">
+            <div class="features_block_inner">
+                <p>38</p>
+                <p>miles</p>
+            </div>
+            <div>Max Range</div>
+        </div>
+        <div class="features_block">
+            <div class="features_block_inner">
+                <p>89</p>
+                <p>nm</p>
+            </div>
+            <div>Max Torques</div>
+        </div>
+        <div class="features_block">
+            <div class="features_block_inner">
+                <p>22%</p>
+                <p>slope</p>
+            </div>
+            <div>Hill Climbing</div>
+        </div>
+    </div>
+    <div class="info">
+        <div class="info_text">
+            <h2>Product Information</h2>
+            <p>Our Scooter has following unique design and technology features:</p>
+        </div>
+        <div class="info_block">
+            <img class="info_block_pic" src="img/image(3).png" alt="info">
+                <ul  class="info_block_text">
+                    <li>
+                        Lightweight aircraft grade aluminium frame
+                    </li>
+                    <li>
+                        Car grade lithium battery
+                    </li>
+                    <li>
+                        Self-balanced
+                    </li>
+                    <li>
+                        Plug n play
+                    </li>
+                    <li>
+                        Quick release adapter
+                    </li>
+                    <li>
+                        RFID key card
+                    </li>
+                </ul>
+        </div>
+    </div>
+    <div class="subscribe">
+        <div class="subscribe_info">
+            <h3>Subscribe To Newsletter</h3>
+            <p>Subscribe to our newsletter to get amazing offers in future.</p>
+            <button id="getStartButt">GET START</button>
+        </div>
+    </div>
+    <div class="footer">
+            <img class="footer_img" src="img/image(5).png" alt="image">
+            <div class="footer_info">
+                <div class="footer_info_first">
+                        <ul>
+                            <li>About</li>
+                            <li>Company</li>
+                            <li>Teams</li>
+                            <li>Profile</li>
+                            <li>Careers</li>
+                        </ul>
+                    </div>
+                    <div class="footer_info_first">
+                        <ul>
+                            <li>Resources</li>
+                            <li>Contact</li>
+                            <li>Application</li>
+                            <li>FQA Features</li>
+                            <li>Review</li>
+                        </ul>
+                    </div>
+                <div class="footer_info_first">
+                    
+                    <div class="footer_info_second_icons">
+                        <div><img src="img/facebook.svg" alt="facebook"></div>
+                        <div><img src="img/instagramm.svg" alt="instagramm"></div>
+                        <div><img src="img//twitter.svg" alt="twitter"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="pop_up" class="pop_up">
+            <div class="pop_up_closeBtn" id="closeBtn">✖</div>
+            <div class="pop_up_form">
+                <h2>Lets become friends</h2>
+                <form id='form' class="pop_up_form_content">
+                    <div class="pop_up_form_content_group">
+                        <label>Email</label>
+                        <input type="text" onchange="validateEmail()" placeholder="Youremail.gmail@com" id="email"/>
+                        <span id="email-error"></span>
+                    </div>
+                    <div class="pop_up_form_content_group">
+                        <label>Favourite color</label>
+                        <input type="color"/>
+                    </div>
+                    <div class="pop_up_form_content_group">
+                        <label>Date of Birth</label>
+                        <input type="date" id="date" onchange="validateDate()">
+                        <span id="date-error"></span>
+                    </div>
+                    <div class="pop_up_form_content_group">
+                        <label>Password</label>
+                        <input onchange="validatePassword()" type="password" id="password"/>
+                        <span id="password-error"></span>
+                    </div>
+                    <div class="pop_up_form_content_group">
+                        <label>Repeat you password</label>
+                        <input onchange="checkPasswords()" type="password" id="check"/>
+                        <span id="check-error"></span>
+                    </div>
+                    <button id='submit' type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <script src="index.js"></script>
+</body>
+</html>
