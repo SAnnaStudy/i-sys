@@ -4,9 +4,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
     const open_modal = document.querySelector('.open_modal')
     const menu_hamburger = document.querySelector(".menu_hamburger");
     const menu_item = document.querySelectorAll(".menu_item");
-    const hamburger= document.querySelector(".hamburger");
-    const close_hamburger_icon= document.querySelector(".close_hamburger_icon");
-    const menu_icon = document.querySelector(".menu_icon");
+    const hamburger = document.querySelector(".hamburger");
+    const close_hamburger_icon= document.querySelector(".close_hamburger_icon")
    function validateEmail(){
         const email = form.querySelector('.email').value
         const emailErrorMessage = form.querySelector('.email-error')
@@ -55,12 +54,12 @@ window.addEventListener("DOMContentLoaded", (event) => {
     function toggleMenu(){
         menu_hamburger.classList.add("show_menu");
         close_hamburger_icon.style.display = "block";
-        menu_icon.style.display = "none";
+        hamburger.style.display = "none";
     }
     function closeMenu(){
         menu_hamburger.classList.remove("show_menu");
         close_hamburger_icon.style.display = "none";
-        menu_icon.style.display = "block";
+        hamburger.style.display = "block";
     }
     if(form){
         const closeModal = document.querySelector('.close_modal')
@@ -101,7 +100,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
         overlay.classList.add('active')
     })
     hamburger.addEventListener("click", toggleMenu);
-
+    close_hamburger_icon.addEventListener("click", closeMenu);
     menu_item.forEach( 
         function(menu_item) { 
             menu_item.addEventListener("click", closeMenu);
