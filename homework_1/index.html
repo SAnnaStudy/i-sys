@@ -30,29 +30,29 @@
                 <li><a class="menu_item" href="#">GALLERY</a></li>
                 <li><a class="menu_item" href="#">CONTACTS</a></li>
                 <button class="log_button">LOG IN</button>
-                <button class="sign_button">SIGN UP</button>
+            <button class="sign_button">SIGN UP</button>
             </ul>
         </header>
         <main>
-            <div class="slider">
-                <div class="slider_text">
+            <div class="description">
+                <div class="description_text">
                     <h1>LET'S RIDE <br><b>THE FUTURE</b></h1>
-                    <div class="slider_text_p">
+                    <div class="description_text_p">
                         <hr>
                         <p>Simple and sleek design with users in mind.</p>
                     </div>
-                    <div class="slider_text_buttons">
-                        <div class="slider_text_buttons_div">
+                    <div class="description_text_buttons">
+                        <div class="description_text_buttons_div">
                             <button>→</button>
                             <p>Buy now</p>
                         </div>
-                        <div class="slider_text_buttons_text">
+                        <div class="description_text_buttons_text">
                             <p>Watch our <br>video how <br>it works</p>
-                            <a href="#"><img class="slider_buttons_text_pic" src="img/play_button.png" alt="player"></a>
+                            <a href="#"><img class="description_buttons_text_pic" src="img/play_button.png" alt="player"></a>
                         </div>
                     </div>
                 </div>
-                <img class="slider_pic" src="img/bg.png" alt="image">
+                <img class="description_pic" src="img/bg.png" alt="image">
             </div>
             <div class="features">
                 <div class="features_block">
@@ -133,7 +133,7 @@
                 <div class="footer_info">
                     <div class="footer_info_block">
                         <ul>
-                            <li><span>About</span></li>
+                            <li><a href="#">About</a></li>
                             <li><a href="#">Company</a></li>
                             <li><a href="#">Teams</a></li>
                             <li><a href="#">Profile</a></li>
@@ -142,7 +142,7 @@
                     </div>
                     <div class="footer_info_block">
                         <ul>
-                            <li><span>Resources</span></li>
+                            <li><a href="#">Resources</a></li>
                             <li><a href="#">Contact</a></li>
                             <li><a href="#">Application</a></li>
                             <li><a href="#">FQA Features</a></li>
@@ -158,31 +158,31 @@
         </footer>
         <modal class="overlay">
             <form class="modal_form">
-                <span class="close_modal">✖</span>
-                <div>
+                <button class="close_modal">✖</button>
+                <div class="modal_form_content">
                     <h4>Lets become friends</h4>
                 <div class="modal_form_group">
-                    <label>Email</label>
-                    <input type="text" class="email" placeholder="Youremail.gmail@com" id="email"/>
+                    <label for="email">Email</label>
+                    <input type="email" class="email" placeholder="Youremail.gmail@com" id="email"/>
                     <span class="email-error"></span>
                 </div>
                 <div class="modal_form_group">
-                    <label>Favourite color</label>
+                    <label for="color">Favourite color</label>
                     <input type="color" id="color"/>
                 </div>
                 <div class="modal_form_group">
-                    <label>Date of Birth</label>
+                    <label for="date">Date of Birth</label>
                     <input type="date" class='date' id="date">
                     <span class="date-error"></span>
                 </div>
                 <div class="modal_form_group">
-                    <label>Password</label>
+                    <label for="password">Password</label>
                     <input class="password" type="password" id="password"/>
                     <span class="password-error"></span>
                 </div>
                 <div class="modal_form_group">
-                    <label>Repeat you password</label>
-                    <input class="check" type="password" id="check"/>
+                    <label for="confirm_password">Repeat you password</label>
+                    <input class="confirm_password" type="password" id="confirm_password"/>
                     <span class="check-error"></span>
                 </div>
                 </div>

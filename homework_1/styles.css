@@ -22,7 +22,7 @@ a, button{
     width: 100%;
     margin: 0 auto;
     display: grid;
-    grid-template-areas: 'header' 'slider' 'features' 'info' 'subscribe' 'footer';
+    grid-template-areas: 'header' 'description' 'features' 'info' 'slider' 'subscribe' 'footer';
 }
 header{
     height: 100px;
@@ -58,18 +58,18 @@ button{
     background-color: rgb(48, 48, 48);
     color: white;
 }
-.slider{
+.description{
     height: 620px;
     display: flex;
-    grid-area: slider;
+    grid-area: description;
     justify-content: space-between;
     align-items: center;
 }
-.slider_pic{
+.description_pic{
     position: absolute;
     right: 0;
 }
-.slider_text{
+.description_text{
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -77,40 +77,40 @@ button{
     position: absolute;
     z-index: 10;
 }
-.slider_text h1{
+.description_text h1{
     font-weight: 100;
     font-size: 3.5rem;
     letter-spacing: 5px;
 }
-.slider_text p{
+.description_text p{
     font-size: 1.2rem;
 }
-.slider_text hr{
+.description_text hr{
     width: 100%;
     border-top: 3px solid #4e4e4e;
 }
-.slider_text button{
+.description_text button{
     width: 50px;
     height: 50px;
     color: white;
     background-color: black;
 }
-.slider_text_buttons{
+.description_text_buttons{
     display: flex;
     width: 400px;
     justify-content: space-between
 }
-.slider_text_buttons_div{
+.description_text_buttons_div{
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.slider_text_buttons_text{
+.description_text_buttons_text{
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.slider_text_p{
+.description_text_p{
     width: 300px;
 }
 .features{
@@ -230,7 +230,7 @@ footer p{
     align-items: flex-start;
     justify-content: flex-start;
 }
-.footer_info_block ul span{
+.footer_info_block ul :first-child a{
     font-size: 1.2rem;
 }
 .footer_info_block ul a{
@@ -289,11 +289,14 @@ footer p{
     color: #000;
     cursor: pointer;
     position: absolute;
-    top: 25px;
+    top: 10px;
 }
 .modal_form h2{
     font-size: 1.5rem;
     margin-top: 20px;
+}
+.modal_form_content{
+    margin: 10px;
 }
 .modal_form_group{
     display: flex;
@@ -389,13 +392,13 @@ footer p{
     header{
         width: 100%;
     }
-    .slider_text{
+    .description_text{
         background-color: rgba(255, 255, 255, 0.589);
         width: 100%;
     }
 }
 @media (max-width: 1060px) {
-    .slider_text h1 {
+    .description_text h1 {
         font-size: 3rem;
     }
     .features_block {
@@ -439,8 +442,11 @@ footer p{
     }
 }
 @media (max-width: 850px) {
-    .slider_pic{
-        width: 80%;
+    .description {
+        height: 500px;
+    }
+    .description_pic{
+        width: 500px;
     }
     .hamburger {
         display: block !important;
@@ -479,10 +485,7 @@ footer p{
     }
 }
 @media (max-width: 600px) {
-    .slider {
-        height: 500px;
-    }
-    .slider_text h1 {
+    .description_text h1 {
         font-size: 2.5rem;
     }
     .features_block {
@@ -505,7 +508,7 @@ footer p{
         font-size: 2rem;
     }
     @media (max-width: 490px) {
-        .slider_text h1 {
+        .description_text h1 {
             font-size: 2rem;
         }
         .info_block_text li::before {

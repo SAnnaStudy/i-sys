@@ -7,21 +7,17 @@ window.addEventListener("DOMContentLoaded", (event) => {
     const hamburger= document.querySelector(".hamburger");
     const close_hamburger_icon= document.querySelector(".close_hamburger_icon");
     const menu_icon = document.querySelector(".menu_icon");
-    validateEmail = () => {
+   function validateEmail(){
         const email = form.querySelector('.email').value
         const emailErrorMessage = form.querySelector('.email-error')
         if(email.length == 0){
             emailErrorMessage.innerHTML = 'email is required'
             return false
         }
-        if(!email.match(/^[A-Za-z/\._\=[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)){
-            emailErrorMessage.innerHTML = 'email is incorrect'
-            return false
-        }
         emailErrorMessage.innerHTML = ''
         return true
     }
-    validatePassword = () => {
+    function validatePassword(){
         const password = form.querySelector('.password').value
         const passwordErrorMessage = form.querySelector('.password-error')
         if(password.length == 0){
@@ -35,18 +31,18 @@ window.addEventListener("DOMContentLoaded", (event) => {
         passwordErrorMessage.innerHTML = ''
         return true
     }
-    checkPasswords = () => {
-        const check = form.querySelector('.check').value
+    function checkPasswords(){
+        const confirm_password = form.querySelector('.confirm_password').value
         const checkErrorMessage = form.querySelector('.check-error')
         const password = form.querySelector('.password').value
-        if(password !== check){
+        if(password !== confirm_password){
             checkErrorMessage.innerHTML = 'passwords must be the same'
             return false
         }
         checkErrorMessage.innerHTML = ''
         return true
     }
-    validateDate = () => {
+    function validateDate(){
         const date = form.querySelector('.date').value
         const dateErrorMessage = form.querySelector('.date-error')
         if(!date){
@@ -56,17 +52,16 @@ window.addEventListener("DOMContentLoaded", (event) => {
         dateErrorMessage.innerHTML = ''
         return true
     }
-    toggleMenu = () => {
-        if (menu_hamburger.classList.contains("show_menu")) {
-            menu_hamburger.classList.remove("show_menu");
-            close_hamburger_icon.style.display = "none";
-            menu_icon.style.display = "block";
-        } else {
-            menu_hamburger.classList.add("show_menu");
-            close_hamburger_icon.style.display = "block";
-            menu_icon.style.display = "none";
-        }
-      }
+    function toggleMenu(){
+        menu_hamburger.classList.add("show_menu");
+        close_hamburger_icon.style.display = "block";
+        menu_icon.style.display = "none";
+    }
+    function closeMenu(){
+        menu_hamburger.classList.remove("show_menu");
+        close_hamburger_icon.style.display = "none";
+        menu_icon.style.display = "block";
+    }
     if(form){
         const closeModal = document.querySelector('.close_modal')
 
@@ -109,7 +104,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
     menu_item.forEach( 
         function(menu_item) { 
-            menu_item.addEventListener("click", toggleMenu);
+            menu_item.addEventListener("click", closeMenu);
         }
     )
 })
