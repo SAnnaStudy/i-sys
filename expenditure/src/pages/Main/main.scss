@@ -1,0 +1,52 @@
+.main{
+    padding: 0 100px;
+    h1{
+        color: rgba(129, 62, 183)
+    }
+    &_content{
+        margin-top: 100px;
+    }
+    &_header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &_button{
+            background-color: white;
+            border: none;
+            cursor: pointer;
+            &_svg{
+                background-color: white;
+                width: 30px;
+            }
+        }
+    }
+    &_actions{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        &_button{
+            width: 100px;
+            background-color: rgba(129, 62, 183);
+            font-weight: bold;
+        }
+    }
+    &_filters{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        &_button{
+            width: 200px;
+        }
+    }
+    &_datepicker{
+        background-color: beige;
+        position: absolute;
+        right: 100px;
+        box-shadow: 0px 0px 12px -6px rgba(0,0,0,0.76);
+    }
+}
+button{
+    cursor: pointer;
+}

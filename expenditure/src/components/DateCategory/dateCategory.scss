@@ -1,0 +1,35 @@
+.datecategories {
+    width: 600px;
+    height: 36px;
+    margin-bottom: 10px;
+    &_ul{
+        width: 100%;
+        left: 16px;
+        padding: 8px 16px;
+        display: flex;
+        margin-top: 0;
+        justify-content: space-between;
+    }
+    &_li{
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #97979B;
+        list-style-type: none;
+        padding: 5px 15px;
+    }
+    &_li:hover{
+        color: #727277;
+        cursor: pointer;
+    }
+    &_choosen{
+        font-weight: 600;
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        line-height: 20px;
+        color: rgb(163, 71, 238);
+        list-style-type: none;
+        padding: 5px 15px;
+    }
+}

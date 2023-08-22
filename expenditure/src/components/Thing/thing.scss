@@ -1,0 +1,20 @@
+.thing{
+    width: 100%;
+    min-height: 35px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px -6px rgba(0,0,0,0.76);
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &_one{
+        width: 200px;
+        align-items: center;
+        text-align: center;
+        &_description{
+            color: gray;
+            font-size: 14px;
+        }
+    }
+}

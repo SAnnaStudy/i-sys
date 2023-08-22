@@ -1,0 +1,37 @@
+.prices {
+    width: 500px;
+    height: 36px;
+    margin-bottom: 20px;
+    &_ul{
+        width: 100%;
+        left: 16px;
+        padding: 8px 16px;
+        display: flex;
+        margin-top: 0;
+        justify-content: space-between;
+    }
+    &_li{
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #97979B;
+        list-style-type: none;
+        padding: 0 12px 7px 12px;
+    }
+    &_li:hover{
+        color: #727277;
+        cursor: pointer;
+    }
+    &_choosen{
+        font-weight: 600;
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        line-height: 20px;
+        color: #474747;
+        list-style-type: none;
+        
+        border-bottom: solid 2px rgba(129, 62, 183);
+        padding: 0 12px 7px 12px;
+    }
+}

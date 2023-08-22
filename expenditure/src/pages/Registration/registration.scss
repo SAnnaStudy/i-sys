@@ -1,0 +1,53 @@
+.registration{
+    box-sizing: border-box;
+    width: 100%;
+    &_container{
+        width: 400px;
+        height: 350px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(129, 62, 183);
+        border-radius: 25px;
+        padding: 30px 50px;
+        &_label{
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+    &_form{
+        width: 380px;
+        height: 400px;
+        padding: 10px;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        &_item{
+            &_input{
+                width: 100%;
+                height: 30px;
+                border-radius: 5px;
+                border: none;
+                margin-top: 5px;
+                padding: 0 10px;
+                box-sizing: border-box;
+            }
+            &_label{
+                text-align: center;
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+        &_button{
+            width: 100%;
+            height: 30px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+            border: none;
+            margin-top: 100px;
+        }
+    }
+}
