@@ -1,0 +1,15 @@
+.profileMenu{
+    width: 150px;
+    background-color: rgba(129, 62, 183);
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+    right: 100px;
+    top: 75px;
+    ul{
+        li{
+            list-style: none;
+            cursor: pointer;
+        }
+    }
+}

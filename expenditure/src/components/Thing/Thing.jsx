@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import {Link} from 'react-router-dom'
+import React from 'react';
 import './thing.scss';
+
 function Thing ({obj}){
   let date = new Date(obj["date"]).toLocaleString().split(',')[0]
   return (

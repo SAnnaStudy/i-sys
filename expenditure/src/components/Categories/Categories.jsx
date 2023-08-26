@@ -1,9 +1,8 @@
 import React  from 'react';
-
 import {useSelector, useDispatch} from 'react-redux'
 import { setCategoryId } from '../../redux/slices/filterSlice';
-
 import './categories.scss';
+
 function Categories (){
   let categories =  ['All', 'Food', 'Rent', 'Netflix', 'Other', 'Shop', 'Study']
   const dispatch = useDispatch()

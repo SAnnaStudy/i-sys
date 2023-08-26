@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import {useSelector, useDispatch} from 'react-redux'
+import {useDispatch} from 'react-redux'
 import './addForm.scss';
 import {nanoid} from 'nanoid'
-import { setItems } from '../../redux/slices/itemsSlice';
+import { setNewItem } from '../../redux/slices/itemsSlice';
+
 function AddForm(){
-  const initualForm = {category: 'Food', date: '', price: '', description: '', id: null}
-  const items = useSelector(state => state.items)
+  const initualForm = {category: 'Food', date: '', price: null, description: '', id: null}
   const dispatch = useDispatch()
   const [responseBody, setResponseBody] = useState(
     initualForm
@@ -23,8 +23,7 @@ function AddForm(){
       price: responseBody.price,
       description: responseBody.description
     }
-    dispatch(setItems(newItem))
-    console.log(items)
+    dispatch(setNewItem(newItem))
     document.getElementById("form").reset();
   }
   return(
@@ -52,7 +51,7 @@ function AddForm(){
             </div>
             <div className="addform_form_item">
               <label className="addform_form_item_label" for='price'>Price</label>
-              <input className="addform_form_item_input" required name='price' type="text" id='price' onChange={(e)=>inputChangeHandler(e)}/>
+              <input className="addform_form_item_input" required name='price' type="number" id='price' onChange={(e)=>inputChangeHandler(e)}/>
             </div>
             <button type='submit' className="addform_form_button">ADD NEW</button>
           </form>

@@ -19,6 +19,11 @@
                 width: 30px;
             }
         }
+        &_profile{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
     }
     &_actions{
         display: flex;

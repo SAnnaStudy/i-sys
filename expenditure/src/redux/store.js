@@ -1,6 +1,7 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit'
 import filter from './slices/filterSlice'
 import items from './slices/itemsSlice'
+import user from './slices/userSlice'
 import {persistStore,
   persistReducer,
   FLUSH,
@@ -13,7 +14,8 @@ import storage from 'redux-persist/lib/storage'
 
 const rootReducer = combineReducers({
     filter,
-    items
+    items,
+    user
 })
 const persistConfig = {
   key: 'root',

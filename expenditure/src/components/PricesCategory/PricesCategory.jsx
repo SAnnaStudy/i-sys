@@ -2,6 +2,7 @@ import React from 'react';
 import {useSelector, useDispatch} from 'react-redux'
 import { setPriceCategory } from '../../redux/slices/filterSlice';
 import './pricesCategory.scss';
+
 function PricesCategory (){
   let priceCategories =  ['All', 'до 100', 'до 500', 'до 1000', 'до 5000', 'до 10 000']
   const dispatch = useDispatch()

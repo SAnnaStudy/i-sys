@@ -2,11 +2,12 @@ import React from 'react';
 import {useSelector} from 'react-redux'
 import './list.scss';
 import Thing from '../Thing/Thing';
+
 function List ({searchValue}){
   const {priceCategory, dateCategoryId, sortType, categoryId} = useSelector(state => state.filter)
   const items = useSelector(state => state.items)
   let finalItems = items.filter(obj => {
-    if(obj.description.includes(searchValue)){
+    if(obj.description.toLowerCase().includes(searchValue.toLowerCase())){
         return true
     } else return false
   })
